@@ -1,0 +1,20 @@
+# Agda build artefacts
+*.agdai
+MAlonzo/
+_build/
+
+# GHC object files left by agda --compile
+*.hi
+*.o
+
+# binari di demo compilati
+/Main
+/MainFS
+
+# direnv / nix
+.direnv/
+result
+result-*
+
+# Windows zone identifiers (WSL)
+*:Zone.Identifier

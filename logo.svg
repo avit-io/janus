@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+
+  <!-- ── FACCIA Π — sinistra, blu profondo (tipi, prove, contemplazione) ── -->
+  <path d="M 100 30
+           C 88 24, 70 26, 55 38
+           C 42 50, 36 66, 36 82
+           L 36 90
+           L 26 102
+           L 40 107
+           L 38 118
+           L 42 130
+           C 44 142, 50 152, 60 164
+           L 78 178
+           L 100 182
+           L 100 30 Z"
+        fill="#1E3A5F"/>
+
+  <!-- ── FACCIA λ — destra, ambra calda (effetti, IO, runtime) ── -->
+  <path d="M 100 30
+           C 112 24, 130 26, 145 38
+           C 158 50, 164 66, 164 82
+           L 164 90
+           L 174 102
+           L 160 107
+           L 162 118
+           L 158 130
+           C 156 142, 150 152, 140 164
+           L 122 178
+           L 100 182
+           L 100 30 Z"
+        fill="#C8460E"/>
+
+  <!-- ── SEAM dorata: il cranio condiviso, dove le due facce si fondono ── -->
+  <line x1="100" y1="30" x2="100" y2="180"
+        stroke="#F5C100" stroke-width="1.2" opacity="0.55"/>
+
+  <!-- ── OCCHI ──────────────────────────────────────────────────────── -->
+  <!-- sinistro: guarda il mondo dei tipi -->
+  <ellipse cx="48" cy="82" rx="3.5" ry="2.4" fill="#F5E6D3"/>
+  <circle  cx="48" cy="82" r="1.6"  fill="#0D1F33"/>
+  <!-- destro: guarda il mondo degli effetti -->
+  <ellipse cx="152" cy="82" rx="3.5" ry="2.4" fill="#F5E6D3"/>
+  <circle  cx="152" cy="82" r="1.6"  fill="#3D1500"/>
+
+  <!-- ── SIMBOLI sulle guance ───────────────────────────────────────── -->
+  <text x="70"  y="125" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="22" font-weight="bold" fill="#F5E6D3">Π</text>
+  <text x="130" y="125" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="22" font-weight="bold" fill="#F5E6D3">λ</text>
+
+  <!-- ── RICCI della barba ──────────────────────────────────────────── -->
+  <circle cx="68"  cy="160" r="4" fill="none" stroke="#0D1F33" stroke-width="1.4"/>
+  <circle cx="82"  cy="170" r="3" fill="none" stroke="#0D1F33" stroke-width="1.4"/>
+  <circle cx="132" cy="160" r="4" fill="none" stroke="#5A1E04" stroke-width="1.4"/>
+  <circle cx="118" cy="170" r="3" fill="none" stroke="#5A1E04" stroke-width="1.4"/>
+
+  <!-- ── ALLORO ROMANO sopra il cranio condiviso ───────────────────── -->
+  <ellipse cx="62"  cy="32" rx="17" ry="5" fill="#3D5C1F"
+           transform="rotate(-22 62 32)"/>
+  <ellipse cx="138" cy="32" rx="17" ry="5" fill="#3D5C1F"
+           transform="rotate(22 138 32)"/>
+  <ellipse cx="45"  cy="46" rx="13" ry="4" fill="#2D4615"
+           transform="rotate(-50 45 46)"/>
+  <ellipse cx="155" cy="46" rx="13" ry="4" fill="#2D4615"
+           transform="rotate(50 155 46)"/>
+  <!-- bacca/gemma centrale -->
+  <circle cx="100" cy="22" r="4" fill="#F5C100"/>
+  <circle cx="100" cy="22" r="1.8" fill="#A87520"/>
+
+  <!-- ── PONTE / CONFINE FFI ────────────────────────────────────────── -->
+  <!-- pilastri -->
+  <rect x="32"  y="212" width="7" height="28" fill="#A87520"/>
+  <rect x="161" y="212" width="7" height="28" fill="#A87520"/>
+  <!-- arco -->
+  <path d="M 39 212 Q 100 192 161 212"
+        fill="none" stroke="#C89800" stroke-width="3"/>
+  <path d="M 39 218 Q 100 200 161 218"
+        fill="none" stroke="#A87520" stroke-width="1.2" opacity="0.6"/>
+  <!-- pietra di volta con Σ: il witness raffinato, la fusione delle due facce -->
+  <rect x="90" y="190" width="20" height="18" fill="#F5C100" rx="1.5"/>
+  <text x="100" y="205" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="15" font-weight="bold" fill="#3D2000">Σ</text>
+
+  <!-- selciato del ponte -->
+  <line x1="33" y1="240" x2="167" y2="240"
+        stroke="#3D2000" stroke-width="2.5"/>
+
+  <!-- ── nome ──────────────────────────────────────────────────────── -->
+  <text x="100" y="256" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="14" font-weight="bold" letter-spacing="5" fill="#3D2000">JANUS</text>
+</svg>
