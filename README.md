@@ -26,10 +26,13 @@ il dato raffinato impacchettato con la sua prova.
   `decodeProof` restituisce `Maybe (Σ A P)`: il dato impacchettato con la prova.
 - `Janus/FFI.agda` — la direzione Agda→Haskell: `IO` importato,
   `call` (solo trasporto) e `callChecked` (le due facce fuse).
-- `Janus/FS*.agda` — un wrapper POSIX *PoC* costruito sopra il core. Vedrà
-  vita propria come runtime di [IbisFS](#downstream); la sua presenza qui
-  documenta il pattern "buccia impura" che ogni runtime esterno dovrà seguire.
-- `Main.agda` / `MainFS.agda` — demo eseguibili.
+- `Main.agda` — demo eseguibile.
+
+> Il vecchio PoC `Janus.FS` è stato rimosso: il suo successore è
+> [`IbisFS.Runtime.POSIX`](../ibisfs/IbisFS/Runtime/POSIX.agda), il
+> primo runtime IbisFS che usa Janus al confine FFI. Il pattern
+> "buccia impura" (catch delle eccezioni Haskell → dati tipati Agda)
+> sopravvive lì, applicato a un'API raffinata via `Janus.Refine`.
 
 ## Compilare ed eseguire
 
